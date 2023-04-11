@@ -1,0 +1,38 @@
+.chatcontainer {
+  width: 300px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.chatlist {
+  flex: auto;
+  border: solid 1px #08b;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px;
+  overflow-y: auto;
+}
+.chatlist div {
+  margin-top: 5px;
+}
+.chatlist span {
+  color: #cd4606;
+}
+.chatsend {
+  height: 30px;
+  display: flex;
+  margin-top: 4px;
+}
+.chatsend .sendtext {
+  flex: auto;
+  height: 26px;
+  margin-right: 2px;
+}
+.chatsend .sendbtn {
+  width: 65px;
+  height: 30px;
+  color: #fff;
+  background-color: #13abd7;
+  border: 0;
+}

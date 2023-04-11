@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Vite + TS</title>
+    <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/c/font_4008379_28i3wp7nz3u.css?spm=a313x.7781069.1998910419.52&file=font_4008379_28i3wp7nz3u.css"
+    />
+    <link
+      rel="stylesheet"
+      href="src/styles/header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/styles/video.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/styles/action.css"
+    />
+    <link
+      rel="stylesheet"
+      href="src/styles/progress.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/styles/chat.css"
+    />
+  </head>
+  <body>
+    <div class="headerwrapper">
+      <div class="header">
+        <div class="title">呆瓜放映厅</div>
+        <div class="menu">换碟</div>
+        <div class="switch">123</div>
+      </div>
+    </div>
+    <div class="videowindow">
+      <div class="videocontainer">
+        <div class="videobox">
+          <video
+            id="video"
+            width="600px"
+            src="http://vjs.zencdn.net/v/oceans.mp4"
+          ></video>
+          <div id="vplay">
+            <b
+              class="iconfont icon-playCircle"
+              id="vplay-btn"
+            ></b>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="crt"></div>
+        </div>
+        <div class="action">
+          <div class="group1">
+            <div
+              class="iconfont icon-play"
+              id="play"
+            ></div>
+            <div class="time">
+              <span class="crt-time"></span>
+              /
+              <span class="total-time"></span>
+            </div>
+          </div>
+          <div class="group2">
+            <div class="speed">
+              <div class="curSpeed">倍速&times;1</div>
+              <div class="speedList">
+                <div value="3">&times;3</div>
+                <div value="2.5">&times;2.5</div>
+                <div value="2">&times;2</div>
+                <div value="1.5">&times;1.5</div>
+                <div value="1">&times;1</div>
+                <div value="0.75">&times;0.75</div>
+                <div value="0.5">&times;0.5</div>
+              </div>
+            </div>
+            <div
+              class="iconfont icon-volumeCross"
+              id="mute"
+              title="静音"
+            ></div>
+            <div class="volume">
+              <div class="vnow"></div>
+              <div class="slider"></div>
+            </div>
+            <div
+              class="iconfont icon-expandHorizontal"
+              id="expand"
+            ></div>
+            <div
+              id="fullscreen"
+              class="iconfont icon-fullscreen"
+              title="全屏"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <aside class="chatcontainer">
+        <div class="chatlist"></div>
+        <div class="chatsend">
+          <input
+            type="text"
+            class="sendtext"
+          />
+          <input
+            type="button"
+            value="发送"
+            class="sendbtn"
+          />
+        </div>
+      </aside>
+    </div>
+    <div style="height: 10000px"></div>
+    <script
+      type="module"
+      src="/src/service/video.ts"
+    ></script>
+  </body>
+</html>

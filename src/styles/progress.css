@@ -1,0 +1,18 @@
+.progress {
+  width: 600px;
+  height: 3px;
+  background-color: #999;
+  border-radius: 3px;
+  position: relative;
+}
+
+.progress .crt {
+  width: 0;
+  height: 3px;
+  background-color: crimson;
+  border-radius: 3px;
+  transition: width 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

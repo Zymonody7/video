@@ -1,0 +1,107 @@
+.action {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.group1,
+.group2 {
+  display: flex;
+  padding: 10px;
+}
+#play,
+#mute,
+#fullscreen,
+#expand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 25px;
+  height: 25px;
+  margin-right: 3px;
+  position: relative; */
+}
+#play:hover,
+#mute:hover,
+#fullscreen:hover,
+#expand:hover {
+  color: #ddd;
+}
+#expand,
+#mute {
+  margin: 0 15px;
+}
+
+.time {
+  line-height: 25px;
+  margin: 0 10px;
+}
+
+.speed {
+  width: 80px;
+  text-align: center;
+  line-height: 25px;
+  padding: 0 5px;
+  cursor: default;
+  position: relative;
+}
+.speed .speedList {
+  display: none;
+  width: 100%;
+  border: solid 1px #999;
+  background-color: #000;
+  border-radius: 5px;
+  line-height: 35px;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  z-index: 50;
+  overflow: hidden;
+}
+.speed .speedList div:hover {
+  background-color: #036441;
+}
+.speed:hover .speedList {
+  display: block;
+}
+
+.volume {
+  width: 60px;
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 4px;
+  position: relative;
+  margin-top: 9px;
+}
+.volume .vnow {
+  width: 60px;
+  height: inherit;
+  background-color: #189bf2;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.volume .slider {
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: solid 1px #666;
+  position: absolute;
+  top: -5px;
+  left: 54px;
+}
+.volume .slider::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #189bf2;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  top: 5px;
+}
